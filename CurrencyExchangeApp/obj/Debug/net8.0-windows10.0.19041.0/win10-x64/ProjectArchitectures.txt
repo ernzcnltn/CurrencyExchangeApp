@@ -1,0 +1,1 @@
+C:\Users\eren7\source\repos\CurrencyExchangeApp\CurrencyExchangeApp\CurrencyExchangeApp.csproj;x64

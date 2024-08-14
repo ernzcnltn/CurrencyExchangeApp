@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CurrencyExchangeApp.CurrencyChangesPage"
+             Title="Exchange Rates"
+              BackgroundImageSource="background.png">
+
+    <ScrollView Padding="20">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- USD Change -->
+            <Frame Grid.Row="0" Grid.Column="0" Padding="10" Margin="5" CornerRadius="10" HasShadow="True" BackgroundColor="#777704">
+                <StackLayout>
+                    <Label Text="USD" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" Padding="30"/>
+                    <Label x:Name="usdChangeLabel" FontSize="16" HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <!-- EUR Change -->
+            <Frame Grid.Row="0" Grid.Column="1" Padding="10" Margin="5" CornerRadius="10" HasShadow="True" BackgroundColor="#058959">
+                <StackLayout>
+                    <Label Text="EUR" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" Padding="30"/>
+                    <Label x:Name="eurChangeLabel" FontSize="16" HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <!-- GBP Change -->
+            <Frame Grid.Row="1" Grid.Column="0" Padding="10" Margin="5" CornerRadius="10" HasShadow="True" BackgroundColor="#5b0591">
+                <StackLayout>
+                    <Label Text="GBP" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" Padding="30"/>
+                    <Label x:Name="gbpChangeLabel" FontSize="16" HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <!-- BTC Change -->
+            <Frame Grid.Row="1" Grid.Column="1" Padding="10" Margin="5" CornerRadius="10" HasShadow="True" BackgroundColor="Firebrick">
+                <StackLayout>
+                    <Label Text="BTC" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" Padding="30"/>
+                    <Label x:Name="btcChangeLabel" FontSize="16" HorizontalOptions="Center"/>
+                </StackLayout>
+
+
+
+            </Frame>
+        </Grid>
+    </ScrollView>
+</ContentPage>
